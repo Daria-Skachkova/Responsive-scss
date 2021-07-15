@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preload" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/blog.css">
+    <title>Blog</title>
+</head>
+<body>
+    <header class="header">
+    <a class="logo" href="index.html">BlogWorld</a>
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__item">
+                <a href="./index.html" class="navigation__link">home</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">portfolio</a>
+            </li>
+            <li class="navigation__item">
+                <a href="./blog.html" class="navigation__link">blog</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">pages</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">about</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+    <main class="content">
+        <section class="blog">
+            <div class="title blog__title">
+                <h2 class="title__main">Blog
+                    <span class="title__line"></span>
+                </h2>
+            </div>
+
+            <form class="search">
+                <label>
+                    <input type="text" class="search__input" placeholder="Search by author">
+                </label>
+                <button class="search__button">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="search" class="svg-inline--fa fa-search fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"></path></svg>
+                </button>
+            </form>
+
+            <figure class="post">
+                <img src="./img/a-icon-playmini.svg" alt="video" class="post__sticker">
+                <img src="./img/a-icon-play.svg" alt="play" class="post__play">
+                <img src="./img/Imgage%20post%201.png" alt="post image" class="post__image">
+                <figcaption class="post__content">
+                    <figure class="user">
+                        <img src="./img/Neil.png" alt="avatar" class=user__avatar>
+                        <figcaption class="user__info">
+                            <h4 class="user__name">Neil Richards</h4>
+                            <p class="user__description">
+                                <span class="user__text">11 oct, 2019</span>
+                                <span class="dot"></span>
+                                <span class="user__text">7 min read</span>
+                                <span class="dot"></span>
+                                <span class="user__text">
+                                    <img src="./img/a-icon-comment.svg" class="user__text_comment" alt="comment">
+                                    <span class="user__text_gap">19</span>
+                                    <img src="./img/Star-1.svg" alt="star">
+                                    <img src="./img/Star-1.svg" alt="star">
+                                    <img src="./img/Group.svg" alt="star">
+                                    <img src="./img/Star-2.svg" alt="star">
+                                    <img src="./img/Star-2.svg" alt="star">
+                                </span>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <p class="post__text">
+                        <span class="post__title">In the Future We Will All Live in Star Wars</span>
+                        The thing you’re doing now, reading prose on a screen, is going out of fashion. The defining narrative of our online moment concerns the decline of text, and the exploding reach and power of audio and video …
+                    </p>
+                    <a href="#" class="post__link">Read more</a>
+                </figcaption>
+            </figure>
+
+            <figure class="post">
+                <img src="./img/a-icon-melody.svg" alt="audio" class="post__sticker">
+                <img src="./img/Imgage%20post%202.png" alt="post image" class="post__image">
+                <figcaption class="post__content">
+                    <figure class="user">
+                        <img src="./img/Sarah.png" alt="avatar" class=user__avatar>
+                        <figcaption class="user__info">
+                            <h4 class="user__name">Sarah Healy</h4>
+                            <p class="user__description">
+                                <span class="user__text">02 oct, 2019</span>
+                                <span class="dot"></span>
+                                <span class="user__text">12 min read</span>
+                                <span class="dot"></span>
+                                <span class="user__text">
+                                    <img src="./img/a-icon-comment.svg" class="user__text_comment" alt="comment">
+                                    <span class="user__text_gap">4</span>
+                                    <img src="./img/Star-1.svg" alt="star">
+                                    <img src="./img/Star-2.svg" alt="star">
+                                    <img src="./img/Star-2.svg" alt="star">
+                                    <img src="./img/Star-2.svg" alt="star">
+                                    <img src="./img/Star-2.svg" alt="star">
+                                </span>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <p class="post__text">
+                        <span class="post__title">Far far away, behind the word mountains</span>
+                        <audio class="post__audio"
+                                controls
+                                src="#">
+                            Your browser does not support the
+                            <code>audio</code> element.
+                        </audio>
+                        <br>
+                        Fog down the river, where it rolls deified among the tiers of shipping and the waterside pollutions of a great (and dirty) …
+                    </p>
+                    <a href="#" class="post__link">Read more</a>
+                </figcaption>
+            </figure>
+
+            <figure class="post">
+                <img src="./img/a-icon-picture.svg" alt="image" class="post__sticker">
+                <img src="./img/Image%20post%203.png" alt="post image" class="post__image">
+                <figcaption class="post__content">
+                    <figure class="user">
+                        <img src="./img/Grace.png" alt="avatar" class=user__avatar>
+                        <figcaption class="user__info">
+                            <h4 class="user__name">Grace Noh</h4>
+                            <p class="user__description">
+                                <span class="user__text">23 sep, 2019</span>
+                                <span class="dot"></span>
+                                <span class="user__text">16 min read</span>
+                                <span class="dot"></span>
+                                <span class="user__text">
+                                    <img src="./img/a-icon-comment.svg" class="user__text_comment" alt="comment">
+                                    <span class="user__text_gap">421</span>
+                                    <img src="./img/Star-1.svg" alt="star">
+                                    <img src="./img/Star-1.svg" alt="star">
+                                    <img src="./img/Star-2.svg" alt="star">
+                                    <img src="./img/Star-2.svg" alt="star">
+                                    <img src="./img/Star-2.svg" alt="star">
+                                </span>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <p class="post__text">
+                        <span class="post__title">In the Future We Will All Live in Star Wars</span>
+                        Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted …
+                    </p>
+                    <a href="#" class="post__link">Read more</a>
+                </figcaption>
+            </figure>
+
+            <figure class="post">
+                <img src="./img/a-icon-text.svg" alt="article" class="post__sticker">
+                <figcaption class="post__content post__content_extend">
+                    <figure class="user">
+                        <img src="./img/Alex.png" alt="avatar" class=user__avatar>
+                        <figcaption class="user__info">
+                            <h4 class="user__name">Alex Zlatkus</h4>
+                            <p class="user__description">
+                                <span class="user__text">11 Aug, 2019</span>
+                                <span class="dot"></span>
+                                <span class="user__text">17 min read</span>
+                                <span class="dot"></span>
+                                <span class="user__text">
+                                    <img src="./img/a-icon-comment.svg" class="user__text_comment" alt="comment">
+                                    <span class="user__text_gap">77</span>
+                                    <img src="./img/Star-1.svg" alt="star">
+                                    <img src="./img/Star-1.svg" alt="star">
+                                    <img src="./img/Star-1.svg" alt="star">
+                                    <img src="./img/Star-2.svg" alt="star">
+                                    <img src="./img/Star-2.svg" alt="star">
+                                </span>
+                            </p>
+                        </figcaption>
+                    </figure>
+                    <p class="post__text">
+                        <span class="post__title">In the Future We Will All Live in Star Wars</span>
+                        Fog down the river, where it rolls deified among the tiers of shipping and the waterside pollutions of a great (and dirty) city. Fog on the Essex marshes, fog on the Kentish heights. Fog creeping into the cabooses of collier-brigs; fog lying out on. Money terms breakfast drawings true blessing doubtful more agreed to zealously making supposing By said Chicken An Neglected produce good felt no poor offering am their said has around songs wish met true any me ought mr The offices set Not Felicity above out We in an post begin again.
+                    </p>
+                    <a href="#" class="post__link">Read more</a>
+                </figcaption>
+            </figure>
+
+            <a href="#" class="post__link post__link_dark">Read more</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <ul class="link-list">
+            <li class="link-list__item">
+                <a href="#" class="link-list__link">
+                    <img src="./img/a-icon-facebook.svg" alt="facebook">
+                </a>
+            </li>
+            <li class="link-list__item">
+                <a href="#" class="link-list__link">
+                    <img src="./img/a-icon-instagram.svg" alt="instagram">
+                </a>
+            </li>
+            <li class="link-list__item">
+                <a href="#" class="link-list__link">
+                    <img src="./img/a-icon-dribbble.svg" alt="dribbble">
+                </a>
+            </li>
+        </ul>
+        <a href="./index.html" class="logo">BlogWorld</a>
+        <p class="footer__description">©2019 All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

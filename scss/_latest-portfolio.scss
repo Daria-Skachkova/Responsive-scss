@@ -1,0 +1,118 @@
+@import "variables";
+@import "mixins";
+
+.latest-portfolio {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ padding: 0 $container-large 65px $container-large;
+
+ &__list {
+  @include columns;
+  margin-bottom: 45px;
+ }
+
+ &__item_first {
+  background: url("../img/bg-img1.png") center / cover no-repeat;
+ }
+
+ &__item_second {
+  background: url("../img/bg-img2.png") center / cover no-repeat;
+ }
+
+ &__item_third {
+  background: url("../img/bg-img3.png") center / cover no-repeat;
+ }
+
+ &__icons {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 105px;
+  height: 62px;
+  bottom: 0;
+  right: 0;
+  border-radius: 5px;
+  background-color: rgba(29, 33, 32, 0.7);
+  opacity: 0;
+  transition: .3s;
+ }
+
+ &__item {
+  position: relative;
+ }
+
+ &__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+  &:hover {
+   box-shadow: 0 10px 10px rgba(77, 76, 73, 0.5);
+  }
+ }
+
+ &__text {
+  color: #fff;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+ }
+
+ &__description {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 0.7;
+ }
+
+ &__button {
+  @include button;
+  @include button-text;
+  box-sizing: border-box;
+  border: 1px solid #4D4C49;
+  margin-top: 40px;
+
+  &:hover {
+   background-color: #393737;
+   color: #fff;
+  }
+ }
+
+ &__arrows {
+  display: flex;
+  justify-content: center;
+ }
+}
+.arrow-left {
+ @include button-arrow;
+ &:hover {
+  box-shadow: 0 1px 4px 1px rgba(77, 76, 73, 0.5);
+  cursor: pointer;
+ }
+}
+.arrow-right {
+ @include button-arrow;
+
+ &:hover {
+  box-shadow: 0 1px 4px 1px rgba(77, 76, 73, 0.5);
+  cursor: pointer;
+ }
+}
+.latest-portfolio__item:hover  .latest-portfolio__icons{
+ opacity: 100;
+}
+
+.arrow-left {
+ transform: rotate(90deg);
+}
+.arrow-right {
+ transform: rotate(270deg);
+}

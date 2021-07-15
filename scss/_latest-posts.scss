@@ -1,0 +1,38 @@
+@import "variables";
+@import "mixins";
+
+
+.latest-posts {
+  padding: 0 $container-large;
+
+  &__list {
+    @include columns;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &__name {
+    padding-top: 12px;
+    font-size: 20px;
+    font-weight: 600;
+
+  }
+  &__description {
+    font-size: 15px;
+  }
+  &__data {
+    display: flex;
+    padding-top: 12px;
+    color: #818181;
+    font-size: 16px;
+  }
+  &__point {
+    box-sizing: border-box;
+    padding: 2px 7px 0 7px;
+  }
+  &__comment {
+    padding-right: 7px;
+  }
+}

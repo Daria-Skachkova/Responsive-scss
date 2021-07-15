@@ -1,0 +1,17 @@
+@import "mixins";
+@import 'default';
+@import 'header';
+@import "title";
+@import "search";
+@import "post";
+@import "footer";
+@import "media";
+
+.blog {
+  @include flex(center, center, column);
+}
+
+.content {
+  box-sizing: border-box;
+  padding: 0 9.8vw;
+}

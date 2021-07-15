@@ -1,0 +1,40 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+input,
+figure,
+figcaption,
+button,
+picture,
+ul,
+li,
+textarea,
+p {
+  margin: 0;
+  padding: 0;
+}
+a,
+button,
+input,
+select {
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: HindSiliguri, serif;
+}

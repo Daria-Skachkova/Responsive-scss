@@ -1,0 +1,42 @@
+.search {
+  position: relative;
+  margin-top: 55px;
+  margin-bottom: 30px;
+  align-self: flex-end;
+
+  &__input {
+    width: 320px;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    border:  1px solid #4D4949;
+
+  }
+  &__button {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    height: 100%;
+    width: 20px;
+    background-color: transparent;
+    border: none;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      color: #4D4C49;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 425px) {
+  .search {
+    @include flex();
+    width: 100%;
+    align-self: center;
+
+    &__input {
+      width: 100%;
+    }
+  }
+}

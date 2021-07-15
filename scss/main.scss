@@ -1,0 +1,68 @@
+@import "default";
+@import "variables";
+@import "mixins";
+@import "header";
+@import "about";
+@import "title";
+@import "latest-posts";
+@import "latest-portfolio";
+@import "testimonials";
+@import "contact";
+@import "footer";
+@import "media";
+
+.home {
+  position: relative;
+  height: 630px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 23px;
+  box-sizing: border-box;
+  padding: $container-large;
+  background: url("../img/bg.jpg") center/cover no-repeat;
+
+  &__title {
+    margin-top: -50px;
+    max-width: 450px;
+    color: #4D4949;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -0.1px;
+  }
+  &__subtitle {
+    max-width: 670px;
+    color: #4D4949;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: normal;
+  }
+  &__buttons {
+    display: flex;
+    gap: 28px;
+  }
+  &__button_first {
+    @include button;
+    @include button-text;
+    background-color: #4D4C49;
+    color: #fff;
+
+    &:hover {
+      background-color: #393737;
+      color: #fff;
+    }
+  }
+  &__button_second {
+    @include button;
+    @include button-text;
+    border: 1px solid #4D4949;
+    color: #4D4949;
+
+    &:hover {
+      background-color: #393737;
+      color: #fff;
+    }
+  }
+}
+

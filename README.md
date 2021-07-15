@@ -1,0 +1,3 @@
+- SCSS
+- BEM
+- Responsive Design
